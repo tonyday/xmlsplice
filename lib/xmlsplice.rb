@@ -1,5 +1,9 @@
 require "xmlsplice/version"
 
 module Xmlsplice
-  # Your code goes here...
+  class Converter
+    def parentise(source, s, l)
+      source if l == 0
+    end
+  end
 end

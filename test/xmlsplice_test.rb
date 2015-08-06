@@ -1,11 +1,16 @@
 require 'test_helper'
 
-class XmlspliceTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::Xmlsplice::VERSION
+describe Xmlsplice do
+
+  describe 'simple housekeeping' do
+    it 'must have a version number' do
+      ::Xmlsplice::VERSION.wont_equal nil
+    end
   end
 
-  def test_it_does_something_useful
-    assert false
+  describe 'some simple scenarios' do
+    it 'must return original given an empty selection' do
+      Xmlsplice::Converter.new.parentise('foo', 0, 0).must_equal 'foo'
+    end
   end
 end
