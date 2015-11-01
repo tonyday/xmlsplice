@@ -1,0 +1,28 @@
+Metrics/LineLength:
+  Max: 120
+
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+    - '**/*.gemspec'
+    - '**/*.podspec'
+    - '**/*.jbuilder'
+    - '**/*.rake'
+    - '**/Gemfile'
+    - '**/Capfile'
+    - '**/Guardfile'
+    - '**/Podfile'
+    - '**/Thorfile'
+    - '**/Vagrantfile'
+    - '**/Berksfile'
+    - '**/Cheffile'
+    - '**/Vagabondfile'
+  Exclude:
+    - 'bin/**/*'
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 15

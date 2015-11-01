@@ -1,7 +1,6 @@
 require 'test_helper'
 
 describe Xmlsplice do
-
   describe 'simple housekeeping' do
     it 'must have a version number' do
       ::Xmlsplice::VERSION.wont_equal nil
